@@ -1,0 +1,8 @@
+{
+ "ipAddress": "88.210.58.93",
+ "port": 5432,
+ "username": "postgres",
+ "password": "Bghujknmol123",
+ "database": "postgres",
+ "timeout": 10000
+}
