@@ -1,6 +1,6 @@
-# TCP чат by CyberConnect
+# ~~TCP чат by CyberConnect~~ Доработанная версия сервера для привязки к СУБД PSQL
 
-Здравствуйе, мы участники хакатона от группы «Астра». В этом репозитории лежать файлы нашего собственного мессенджера. Мы очень старались!
+Здравствуйnе, ~~мы участники хакатона от группы «Астра»~~ я разработчик, решившийся переписать логику для сервера для лучшей поддерживаемости и модульности. Данная версия была создана для проекта по Разработке Программных Модулей, темой которого стал "WPF-Мессенджер".
 
 ## Содержание
 - [Технологии](#технологии)
@@ -13,50 +13,34 @@
 - [postgresql](https://www.postgresql.org/)
 - [pqxx](https://github.com/jtv/libpqxx)
 - [nlohmann/json](https://github.com/nlohmann/json)
-- [boost/websocket](https://github.com/boostorg)
+- ~~[boost/websocket](https://github.com/boostorg)~~
+- [sys/socket]
 
 ## Начало-работы
-Команды приведены для OS astra linux
+Команды приведены для ~~OS astra linux~~ любого дистрибутива Linux на котором вы сможете настроить зависимости
 
 ### Установка
 
-Установите необходимые пакеты с помощью утилиты apt-get:
-```sh
-$ apt-get install g++ cmake libpq-dev #libboost-all-dev б
-```
-Библиотеку boost для работы на OS astra linux нужно скомпилировать [самостоятельно](https://stackoverflow.com/questions/12578499/how-to-install-boost-on-ubuntu)
+~~Библиотеку boost для работы на OS astra linux нужно скомпилировать [самостоятельно](https://stackoverflow.com/questions/12578499/how-to-install-boost-on-ubuntu)~~
+Это больше не WebSocket это обыкновенный TCP Socket
 
 Выполните сборку:
 ```sh
-cd tcp_chat
+cd imageboard-main
 mkdir build && cd build
 cmake ..
 cmake --build .
 ```
 
-Установка:
-```sh
-cmake --install .               #(По умолчанию в /opt)
-```
-
-запуск:
-```sh
-./opt/bin/server              #с установкой
-
-или 
-
-~/tcp_chat/build$ ./server    #без установки
-```
-
-### Зачем мы разработали этот проект?
-Чтобы был.
+### Зачем ~~мы~~ я разработал этот проект?
+Я додик
 
 ## Команда проекта
 
-- [Артём Шакиров](https://github.com/artemka-sh) — Beckend Engineer
-- [Максим Журавлёв](https://github.com/makszhuravlev) — Front-End Engineer
-- [Леонид Лопатин](https://github.com/MagentaNyashka) — Backend Developer
-- [Александр Степанцов](https://github.com/sashok112) — Team Leader
+- ~~[Артём Шакиров](https://github.com/artemka-sh) — Beckend Engineer~~
+- ~~[Максим Журавлёв](https://github.com/makszhuravlev) — Front-End Engineer~~
+- ~~[Александр Степанцов](https://github.com/sashok112) — Team Leader~~
+- [Леонид Лопатин](https://github.com/MagentaNyashka) — Я ОДИН
 
 ## Источники
-[How discord stores billions of messages](https://discord.com/blog/how-discord-stores-billions-of-messages)
+[Source](https://ru.wikipedia.org/wiki/%D0%A8%D0%B8%D0%B7%D0%BE%D1%84%D1%80%D0%B5%D0%BD%D0%B8%D1%8F)
